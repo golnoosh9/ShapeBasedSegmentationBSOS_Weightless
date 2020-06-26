@@ -1,0 +1,5 @@
+#BSUB -o cpu_test.%J
+#BSUB -R '(!gpu)'
+#BSUB -N
+#BSUB -J withoutweight
+/project/engineering/matlab/latest/bin/matlab < run_iterate.m
